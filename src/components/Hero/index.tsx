@@ -1,10 +1,14 @@
-import React from 'react';
-import ScrollAnimation from '../_common/ScrollAnimation';
-import { ReactComponent as Rect1 } from '../../assets/images/rect1.svg';
-import srcGirl from '../../assets/images/girl.png';
-import srcGirl2x from '../../assets/images/girl@2x.png';
+import React from "react";
+import ScrollAnimation from "../_common/ScrollAnimation";
+import { ReactComponent as Rect1 } from "../../assets/images/rect1.svg";
+import srcGirl from "../../assets/images/girl.png";
+import srcGirl2x from "../../assets/images/girl@2x.png";
+import srcIphone from "../../assets/images/phone.png";
+import srcIphone2x from "../../assets/images/phone@2x.png";
+import srcButtons from "../../assets/images/buttons.png";
+import srcButtons2x from "../../assets/images/buttons@2x.png";
 
-import './style.scss';
+import "./style.scss";
 
 export default function Hero() {
   return (
@@ -21,54 +25,44 @@ export default function Hero() {
                 tag="span"
                 className="Banner-TextSpan"
                 effect="fadeInLeft"
-                delay={100}
+                delay={250}
               >
-                YOUR APP
-              </ScrollAnimation>
-              <ScrollAnimation
-                tag="span"
-                className="Banner-TextSpan"
-                effect="fadeInRight"
-              >
-                YOUR BRAND
-              </ScrollAnimation>{' '}
-              <ScrollAnimation
-                tag="span"
-                className="Banner-TextSpan"
-                effect="fadeInLeft"
-                delay={400}
-              >
-                YOUR BUSINESS
-              </ScrollAnimation>{' '}
-              <ScrollAnimation
-                tag="span"
-                className="Banner-TextSpan"
-                effect="fadeInRight"
-                delay={550}
-              >
-                YOUR WAY
+                {"YOUR APP\nYOUR BRAND\nYOUR WAY"}
               </ScrollAnimation>
             </h1>
             <div className="hero__graphics">
               <ScrollAnimation
                 isEaseOut
-                effect="scaleOut"
-                duration={4000}
+                effect="rotate"
+                duration={1500}
                 className="Banner-Blotch"
               >
                 <Rect1 className="hero__rect" />
               </ScrollAnimation>
               <ScrollAnimation
                 className="Banner-ImgBlock"
-                effect="fadeInLeft"
-                duration={2000}
+                effect="fadeInTop"
+                duration={1500}
               >
-                <img
-                  src={srcGirl}
-                  srcSet={`${srcGirl2x} 2x`}
-                  alt="Girl"
-                  className="hero__girl"
-                />
+                <div className="Banner-Img">
+                  <img
+                    src={srcGirl}
+                    srcSet={`${srcGirl2x} 2x`}
+                    alt="Girl"
+                    className="hero__girl"
+                  />
+                  <img
+                    src={srcIphone}
+                    srcSet={`${srcIphone2x} 2x`}
+                    alt="Phone"
+                  />
+                  <img
+                    src={srcButtons}
+                    srcSet={`${srcButtons2x} 2x`}
+                    alt="Buttons"
+                    className="hero__buttons"
+                  />
+                </div>
               </ScrollAnimation>
             </div>
           </div>

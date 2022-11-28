@@ -32,3 +32,16 @@
     @content;
   }
 }
+
+@mixin tablet-only {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin mobile-only {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+

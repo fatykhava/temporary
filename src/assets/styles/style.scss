@@ -62,9 +62,18 @@ h6 {
   text-transform: uppercase;
   font-weight: 900;
 }
+
 .h-5 {
+  font-weight: 400;
   font-size: 16px;
+  line-height: 24px;
+
+  @include tablet-only {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
+
 .h-4 {
   font-size: 24px;
 }
@@ -74,15 +83,22 @@ h6 {
 .h-2 {
   font-size: 40px;
 }
+
 .h-1 {
-  font-size: 80px;
-  @include sm {
-    font-size: 70px;
+  font-size: 72px;
+  line-height: 70px;
+
+  @include tablet-only {
+    font-size: 40px;
+    line-height: 48px;
   }
-  @include xs {
-    font-size: 60px;
+
+  @include mobile-only {
+    font-size: 32px;
+    line-height: 40px;
   }
 }
+
 .icon {
   width: 1em;
   height: 1em;

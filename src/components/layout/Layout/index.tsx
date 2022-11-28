@@ -37,7 +37,7 @@ const Layout: React.FC<HeaderProps> = ({
           { property: 'og:type', content: 'website' },
         ]}
       />
-      {showHeader ? <Header theme={headerTheme} back={back} /> : null}
+      {showHeader && <Header theme={headerTheme} back={back} />}
       <main className="main">{children}</main>
       {showFooter ? <Footer /> : null}
     </div>

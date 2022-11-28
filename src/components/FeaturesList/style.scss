@@ -186,15 +186,6 @@
         );
       }
     }
-    &:nth-child(7) {
-      @include xs {
-        background: linear-gradient(
-          146.89deg,
-          #f6f1da -0.94%,
-          rgba(244, 209, 196, 0.6) 111.2%
-        );
-      }
-    }
   }
 }
 .feature {

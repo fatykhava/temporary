@@ -94,6 +94,7 @@ const featuresData = [
     bg: Bg6,
   },
 ];
+
 export default function FeaturesList() {
   return (
     <section className="section section--festures">

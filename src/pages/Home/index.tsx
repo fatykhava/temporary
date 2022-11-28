@@ -1,5 +1,6 @@
-import { Box, Button, Grid } from "@material-ui/core";
+import { Button, Grid } from "@material-ui/core";
 
+import BestApp from "../../components/BestApp";
 import Layout from "../../components/layout/Layout";
 import Hero from "../../components/Hero";
 import TeamMember from "../../components/TeamMember";
@@ -13,7 +14,6 @@ function Home() {
   return (
     <Layout className="page-home">
       <Hero />
-
       <FeaturesList />
       <section className="section" id="team">
         <div className="container">
@@ -33,17 +33,18 @@ function Home() {
             ))}
           </Grid>
           <ScrollAnimation effect="scale" className="button">
-              <Button
-                variant="contained"
-                color="primary"
-                disableElevation
-                href="/team"
-              >
-                Meet the team
-              </Button>
+            <Button
+              variant="contained"
+              color="primary"
+              disableElevation
+              href="/team"
+            >
+              Meet the team
+            </Button>
           </ScrollAnimation>
         </div>
       </section>
+      <BestApp />
     </Layout>
   );
 }

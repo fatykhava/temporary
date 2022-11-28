@@ -24,6 +24,7 @@
   display: flex;
   justify-content: space-between;
   height: 100vh;
+  min-height: 720px;
   max-height: 100vh;
   padding-top: 90px;
   padding-left: 15px;
@@ -33,7 +34,6 @@
     justify-content: space-evenly;
     height: auto;
     max-height: 100%;
-    min-height: 100vh;
     padding-top: 115px;
   }
 

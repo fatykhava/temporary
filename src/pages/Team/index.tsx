@@ -48,7 +48,7 @@ export const teamData = [
   {
     id: '002',
     name: 'Bill',
-    position: 'CREATIVE DIRECTOR',
+    position: 'Team Owner',
     avatar: memberAva2,
     avatarSrcset: memberAva2x2,
   },

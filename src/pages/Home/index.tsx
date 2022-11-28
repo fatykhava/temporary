@@ -32,17 +32,15 @@ function Home() {
               </Grid>
             ))}
           </Grid>
-          <ScrollAnimation effect="scale">
-            <Box display="flex" justifyContent="center" alignItems="center">
+          <ScrollAnimation effect="scale" className="button">
               <Button
                 variant="contained"
                 color="primary"
                 disableElevation
                 href="/team"
               >
-                Check all team out
+                Meet the team
               </Button>
-            </Box>
           </ScrollAnimation>
         </div>
       </section>

@@ -1,0 +1,103 @@
+@import "../../assets/styles/variables";
+@import "../../assets/styles/mixins";
+
+.white {
+  color: #ffff;
+}
+
+.studioApp {
+  background: #3b4554;
+  width: 100%;
+  position: relative;
+  padding-top: 78px;
+  padding-bottom: 104px;
+  color: #ffff;
+
+  @include tablet-only {
+    padding: 42px 0;
+  }
+
+  & .h-2 {
+    margin-bottom: 62px;
+    text-align: center;
+
+    @include mobile-only {
+      margin-bottom: 32px;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 38px;
+    }
+  }
+
+  & > * {
+    z-index: 1;
+  }
+
+  .studio_container {
+    display: flex;
+    justify-content: center;
+
+    @include tablet-only {
+      display: block;
+      text-align: center;
+    }
+
+    .glyphs {
+      margin: auto 0;
+
+      & img {
+        width: 250px;
+        height: 250px;
+        margin-right: 60px;
+
+        @include tablet-only {
+          margin-right: 0px;
+          margin-bottom: 60px;
+        }
+
+        @include mobile-only {
+          width: 202px;
+          height: 202px;
+          margin-bottom: 24px;
+        }
+      }
+    }
+
+    .studio_advantages {
+      display: flex;
+      flex-direction: column;
+
+      .studio_description {
+        margin-bottom: 16px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+
+        @include tablet-only {
+          font-size: 20px;
+          line-height: 24px;
+        }
+
+        @include mobile-only {
+          font-size: 16px;
+          opacity: 0.6;
+        }
+      }
+
+      .studio_caption {
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 40px;
+
+        @include tablet-only {
+          font-size: 28px;
+          line-height: 32px;
+        }
+
+        @include mobile-only {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

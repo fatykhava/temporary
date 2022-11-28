@@ -1,5 +1,6 @@
 import { Button, Grid } from "@material-ui/core";
 
+import Studio from "../../components/Studio";
 import BestApp from "../../components/BestApp";
 import Layout from "../../components/layout/Layout";
 import Hero from "../../components/Hero";
@@ -44,6 +45,7 @@ function Home() {
           </ScrollAnimation>
         </div>
       </section>
+      <Studio/>
       <BestApp />
     </Layout>
   );

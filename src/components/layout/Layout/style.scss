@@ -1,0 +1,8 @@
+.page-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.main {
+  flex-grow: 1;
+}

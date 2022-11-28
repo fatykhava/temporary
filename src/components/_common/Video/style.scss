@@ -1,0 +1,154 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixins';
+
+.Video {
+  position: absolute;
+  width: 190px;
+  top: 149px;
+  left: calc(50.3% - 52px);
+  z-index: 1;
+  &::after {
+    @include pseudo();
+    top: -1px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../../../assets/images/features/pause.png') top / contain
+      no-repeat;
+    @include image-2x('../images/features/pause@2x.png');
+  }
+  @include sm {
+    top: 81px;
+    width: 101px;
+    left: calc(50.3% - 28px);
+  }
+  @include xs {
+    top: 80px;
+    width: 131px;
+    left: calc(50.3% - 66px);
+  }
+
+  &-CurrentTime {
+    position: absolute;
+    font-family: $font-family;
+    font-weight: 300;
+    font-size: 34px;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    @include sm {
+      top: -38px;
+      font-size: 18px;
+    }
+    @include xs {
+      top: -49px;
+      font-size: 24px;
+    }
+  }
+
+  &-RemainTime {
+    position: absolute;
+    color: $dark-two;
+    z-index: 1;
+    top: 22px;
+    left: 13px;
+    font-size: 18px;
+    @include sm {
+      top: 11px;
+      left: 8px;
+      font-size: 10px;
+    }
+    @include xs {
+      top: 15px;
+      left: 10px;
+      font-size: 14px;
+    }
+  }
+
+  .video-react {
+    padding-top: 0 !important;
+  }
+  .video-react-video {
+    width: 190px;
+    height: 190px;
+    @include sm {
+      width: 101px;
+      height: 101px;
+    }
+    @include xs {
+      width: 131px;
+      height: 131px;
+    }
+  }
+
+  .video-react-control-bar {
+    margin-top: -4px;
+    width: 190px;
+    background: transparent;
+    @include sm {
+      width: 101px;
+    }
+    @include xs {
+      width: 131px;
+    }
+  }
+  .video-react-slider-bar {
+    margin-top: -4px;
+  }
+
+  .video-react-play-progress {
+    background-color: $light-peach;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    height: 4px !important;
+    transition: width $short linear;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+    @include sm {
+      height: 2px !important;
+    }
+    @include xs {
+      height: 3px !important;
+    }
+  }
+  .video-react-control-text {
+    display: none;
+  }
+  .video-react-slider {
+    top: 17px;
+    margin: 0;
+    height: 4px !important;
+    @include sm {
+      top: 16px;
+      height: 2px !important;
+    }
+    @include xs {
+      top: 16px;
+      height: 3px !important;
+    }
+  }
+
+  .video-react-load-progress {
+    height: 4px !important;
+    @include sm {
+      height: 2px !important;
+    }
+    @include xs {
+      height: 2px !important;
+    }
+    & > div {
+      height: 4px !important;
+      background: $dark;
+      @include sm {
+        height: 2px !important;
+      }
+      @include xs {
+        height: 3px !important;
+      }
+    }
+  }
+}

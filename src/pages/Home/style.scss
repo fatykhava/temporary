@@ -1,0 +1,124 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+.page-home {
+  @include xs {
+    .header__logo {
+      fill: #3b4554;
+    }
+  }
+}
+.section {
+  margin: 100px 0 80px;
+  .h-2 {
+    margin-bottom: 64px;
+    text-align: center;
+    @include sm {
+      margin-bottom: 48px;
+    }
+  }
+}
+.offer__row {
+  margin: 0 -20px;
+  @include xs {
+    flex-direction: column-reverse;
+    .MuiGrid-item {
+      width: 100%;
+    }
+  }
+}
+.offer__info {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 294px;
+  line-height: 1.5;
+  & > * {
+    z-index: 1;
+  }
+  @include xs {
+    align-items: center;
+    margin: 60px auto;
+    p {
+      font-size: 24px;
+      text-decoration: underline;
+    }
+  }
+}
+.offer__blotch {
+  position: absolute;
+  z-index: 0;
+  top: 10%;
+  bottom: 0;
+  left: 3%;
+  margin: auto;
+  width: 271px;
+  height: 329px;
+}
+// Examples
+.examples {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 120px auto 200px;
+  @include sm {
+    margin: 48px auto 100px;
+  }
+}
+.examples__pic-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & > * {
+    width: 46%;
+    z-index: 1;
+    margin: 0 -8% 0;
+    @include sm {
+      width: 70%;
+      margin: 0 0 -20%;
+    }
+    @include xs {
+      width: 90%;
+      margin: 0 0 -25%;
+    }
+  }
+  @include sm {
+    flex-direction: column;
+    margin-bottom: 10%;
+  }
+}
+.examples__block {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+.examples__blotch {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 0;
+  width: 100%;
+  max-width: 730px;
+}
+.examples__blotch-svg {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+  @include md {
+    max-width: 85%;
+  }
+  @include sm {
+    margin-top: 15%;
+    max-width: 100%;
+    transform: rotate(15deg);
+  }
+}

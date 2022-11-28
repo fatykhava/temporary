@@ -1,0 +1,145 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+.hero {
+  background: linear-gradient(
+    315deg,
+    #b0e1f6 0%,
+    #6ae0c4 50.57%,
+    #50bc96 98.19%,
+    #50bc96 98.19%
+  );
+  @include md {
+    overflow: hidden;
+  }
+  @include xs {
+    background: none;
+    color: #3b4554;
+  }
+}
+.hero__inner {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  padding-top: 90px;
+  @include xs {
+    padding-top: 73px;
+    padding-bottom: 32px;
+    flex-direction: column;
+    align-items: center;
+    min-height: 0;
+  }
+
+  & > * {
+    z-index: 1;
+  }
+  .h-1 {
+    line-height: 0.9;
+    color: #fff;
+    align-self: center;
+    padding-bottom: 90px;
+    @include xs {
+      z-index: 0;
+      margin: 0;
+      padding-bottom: 32px;
+      background: none;
+      color: #50bc96;
+      overflow: hidden;
+      line-height: 0.9;
+      font-size: 55px;
+      span {
+        &:nth-child(1) {
+          background: -webkit-linear-gradient(#50bc96, #56c5a1);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        &:nth-child(2) {
+          background: -webkit-linear-gradient(#59c7a3, #5dceac);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        &:nth-child(3) {
+          background: -webkit-linear-gradient(#5fd0af, #65d8b8);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        &:nth-child(4) {
+          background: -webkit-linear-gradient(#64dabb, #6be0c5);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+    @media (max-width: 500px) {
+      font-size: 11vw;
+    }
+  }
+}
+.Banner-TextSpan {
+  display: block;
+}
+.hero__graphics {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  @include xs {
+    position: relative;
+    z-index: 1;
+  }
+}
+.hero__rect {
+  width: 63.75%;
+  max-width: 715px;
+  @include xs {
+    width: 100%;
+  }
+}
+
+.Banner-ImgBlock {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  right: 5%;
+  top: 2vh;
+  @include md {
+  }
+  @include sm {
+    right: -1%;
+  }
+  @include xs {
+    left: 0;
+    right: 0;
+    position: relative;
+    justify-content: center;
+  }
+  @include xs-up {
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+.hero__girl {
+  max-height: 80vh;
+  max-width: 50vw;
+  @include md {
+  }
+  @include xs {
+  }
+}
+.Banner-Blotch {
+  position: absolute;
+  bottom: 0;
+  right: -2%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+
+  @include xs {
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,37 @@
+@import '../../assets/styles/mixins';
+
+.page-team {
+  .member {
+    margin-bottom: 72px;
+  }
+  .teamlist {
+    margin-bottom: 60px;
+  }
+}
+.team__hero {
+  padding-top: 64px;
+  max-width: 793px;
+  margin: 104px 0 96px;
+  @include xs {
+    padding-top: 24px;
+    margin: 72px 0 72px;
+  }
+  .h-1 {
+    margin-bottom: 0.5em;
+    @include xs {
+      line-height: 1em;
+      margin: 0 -10vw 24px;
+      text-align: center;
+    }
+  }
+  p {
+    line-height: 1.5em;
+    opacity: 0.8;
+  }
+}
+.team__hero-bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}

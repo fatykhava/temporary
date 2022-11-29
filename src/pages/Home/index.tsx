@@ -4,11 +4,11 @@ import Studio from "../../components/Studio";
 import BestApp from "../../components/BestApp";
 import Layout from "../../components/layout/Layout";
 import Hero from "../../components/Hero";
-import TeamSlider from "../../components/TeamSlider";
+import TeamSlider from "../../components/sliders/TeamSlider";
 import FeaturesList from "../../components/FeaturesList";
 import ScrollAnimation from "../../components/_common/ScrollAnimation";
 import "./style.scss";
-import OfferList from '../../components/OfferList';
+import OfferList from "../../components/OfferList";
 
 function Home() {
   return (

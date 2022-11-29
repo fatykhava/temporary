@@ -1,9 +1,9 @@
 import Slider from "react-slick";
-import ScrollAnimation from "../_common/ScrollAnimation";
-import TeamMember from "../TeamMember";
+import ScrollAnimation from "../../_common/ScrollAnimation";
+import TeamMember from "../../TeamMember";
 
-import { teamData } from "../../core/const/team";
-import { ReactComponent as ArrowSVG } from "../../assets/images/arrow.svg";
+import { teamData } from "../../../core/const/team";
+import { ReactComponent as ArrowSVG } from "../../../assets/images/arrow.svg";
 
 import "./style.scss";
 import "slick-carousel/slick/slick.css";
@@ -31,7 +31,7 @@ const PrevArrow = (props: any) => {
 const sliderSettings = {
   dots: false,
   slidesToShow: 3,
-  speed: 1500,
+  speed: 1000,
   autoplaySpeed: 6000,
   slidesToScroll: 1,
   infinite: true,

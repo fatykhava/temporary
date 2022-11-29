@@ -1,0 +1,112 @@
+@import "../../assets/styles/variables";
+@import "../../assets/styles/mixins";
+
+.white {
+  color: #ffff;
+}
+
+.ourApps {
+  margin-bottom: 200px;
+
+  & .h-2 {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+
+.ourApps__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  & > div {
+    position: relative;
+    width: 947px;
+    height: 588px;
+    margin-bottom: 75px;
+
+    @include tablet-only {
+      width: 693px;
+      height: 430px;
+    }
+
+    @include mobile-only {
+      width: 270px;
+      height: 326px;
+    }
+  }
+}
+
+.apps__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.5s;
+
+  &.visible {
+    opacity: 1;
+  }
+
+  &.img-1 {
+    background: url("../../assets/images/apps1@2x.png") no-repeat center;
+    background-size: cover;
+
+    @include mobile-only {
+      background: url("../../assets/images/apps-mobile1@2x.png") no-repeat
+        center;
+      background-size: cover;
+    }
+  }
+
+  &.img-2 {
+    background: url("../../assets/images/apps2@2x.png") no-repeat center;
+    background-size: cover;
+
+    @include mobile-only {
+      background: url("../../assets/images/apps-mobile2@2x.png") no-repeat
+        center;
+      background-size: cover;
+    }
+  }
+
+  &.img-3 {
+    background: url("../../assets/images/apps3@2x.png") no-repeat center;
+    background-size: cover;
+
+    @include mobile-only {
+      background: url("../../assets/images/apps-mobile3@2x.png");
+      background-size: cover;
+    }
+  }
+}
+
+.apps__logo {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+
+  & > div {
+    width: 120px;
+    height: 120px;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    @include tablet-only {
+      width: 60px;
+      height: 60px;
+    }
+
+    @include mobile-only {
+      width: 48px;
+      height: 48px;
+    }
+  }
+}

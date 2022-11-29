@@ -7,14 +7,17 @@ import Hero from "../../components/Hero";
 import TeamSlider from "../../components/sliders/TeamSlider";
 import FeaturesList from "../../components/FeaturesList";
 import ScrollAnimation from "../../components/_common/ScrollAnimation";
-import "./style.scss";
 import OfferList from "../../components/OfferList";
+import OurApps from '../../components/OurApps';
+
+import "./style.scss";
 
 function Home() {
   return (
     <Layout className="page-home">
       <Hero />
       <FeaturesList />
+      <OurApps />
       <section className="section" id="team">
         <div className="container">
           <h2 className="h-2">Our Team</h2>

@@ -12,6 +12,10 @@
     margin-bottom: 50px;
     text-align: center;
   }
+
+  @include mobile-only {
+    margin-bottom: 45px;
+  }
 }
 
 .ourApps__container {

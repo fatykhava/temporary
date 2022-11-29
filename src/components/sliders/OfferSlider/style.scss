@@ -1,0 +1,81 @@
+@import "../../../assets/styles/mixins";
+
+.offer__slider {
+  width: 600px;
+
+  & .slick-slide {
+    max-width: 256px;
+    height: 475px;
+    max-height: 475px;
+  }
+
+  & .slick-dots {
+    position: static;
+    margin-top: 24px;
+  }
+
+  & .slick-dots li.slick-active button:before {
+    top: 0px;
+    width: 10px;
+    height: 10px;
+    background: #6ae0c4;
+    border-radius: 50%;
+    font-size: 0;
+    opacity: 1;
+  }
+
+  & .slick-dots li button:before {
+    top: 3px;
+    width: 4px;
+    height: 4px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    font-size: 0;
+    opacity: 1;
+  }
+}
+
+.offer__item {
+  position: relative;
+  background-size: contain;
+  max-width: 256px;
+  height: 100%;
+  min-height: 475px;
+  padding: 100px 40px 0;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+  }
+
+  & .offer__content > div {
+    min-height: 170px;
+  }
+
+  & .offer__text {
+    @include mobile-only {
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+
+  &.bg-0 {
+    @include mobile-only {
+      background: url("../../../assets/images/offer-slider/bg1.svg") no-repeat
+        center;
+      background-size: contain;
+    }
+  }
+  
+  &.bg-1 {
+    @include mobile-only {
+      background: url("../../../assets/images/offer-slider/bg2.svg") no-repeat
+        center;
+      background-size: contain;
+    }
+  }
+}

@@ -1,5 +1,4 @@
 import Slider from "react-slick";
-import ScrollAnimation from "../../_common/ScrollAnimation";
 
 import "./style.scss";
 import "slick-carousel/slick/slick.css";
@@ -27,11 +26,7 @@ export default function FeatureSlider() {
       {featuresData.map((it, idx) => (
         <div key={it.id}>
           <div className={`feature__item bg-${idx}`}>
-            <ScrollAnimation
-              className="feature__assets"
-              effect={idx % 2 ? "fadeInScreenRight" : "fadeInScreenLeft"}
-              duration={1500}
-            >
+            <div className="feature__assets">
               <div>
                 <img
                   src={it.mockup}
@@ -40,27 +35,12 @@ export default function FeatureSlider() {
                 />
                 {it.id === "001" && <Video feature={it} />}
               </div>
-            </ScrollAnimation>
-            <ScrollAnimation
-              tag="span"
-              effect={idx % 2 ? "fadeInLeft" : "fadeInRight"}
-              className="feature__number"
-            >
-              {++idx}
-            </ScrollAnimation>
+            </div>
+            <span className="feature__number">{++idx}</span>
             <div className="feature__content">
               <div>
-                <ScrollAnimation
-                  effect={idx % 2 ? "fadeInLeft" : "fadeInRight"}
-                >
-                  <h4 className="h-4">{it.caption}</h4>
-                </ScrollAnimation>
-
-                <ScrollAnimation
-                  effect={idx % 2 ? "fadeInLeft" : "fadeInRight"}
-                >
-                  <p className="feature__descr">{it.descr}</p>
-                </ScrollAnimation>
+                <h4 className="h-4">{it.caption}</h4>
+                <p className="feature__descr">{it.descr}</p>
               </div>
             </div>
           </div>

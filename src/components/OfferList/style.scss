@@ -168,3 +168,11 @@
     display: none;
   }
 }
+
+.slider--offers {
+  display: none;
+
+  @include mobile-only {
+    display: block;
+  }
+}

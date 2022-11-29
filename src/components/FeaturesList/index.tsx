@@ -26,7 +26,11 @@ import { ReactComponent as Path4 } from "../../assets/images/features/path4.svg"
 import { ReactComponent as Path5 } from "../../assets/images/features/path5.svg";
 
 import "./style.scss";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import { Box } from "@material-ui/core";
+import Slider from "react-slick";
 import ScrollAnimation from "../_common/ScrollAnimation";
 import Video from "../_common/Video";
 
@@ -95,6 +99,16 @@ const featuresData = [
   },
 ];
 
+const sliderSettings = {
+  dots: false,
+  slidesToShow: 1,
+  speed: 3000,
+  autoplaySpeed: 6000,
+  arrows: false,
+  slidesToScroll: 1,
+  autoplay: true,
+};
+
 export default function FeaturesList() {
   return (
     <section className="section section--festures">
@@ -140,6 +154,49 @@ export default function FeaturesList() {
               </div>
             </div>
           ))}
+        </Box>
+        <Box className="slider--festures">
+          <Slider className='slider' {...sliderSettings}>
+            {featuresData.map((it, idx) => (
+              <div key={it.id} className="feature">
+                <it.bg className="feature__gradient-bg" />
+                {it?.path && <it.path className="feature__path" />}
+                <ScrollAnimation
+                  effect={idx % 2 ? "fadeInScreenRight" : "fadeInScreenLeft"}
+                  duration={1500}
+                >
+                  <div className="feature__mockup">
+                    <img
+                      src={it.mockup}
+                      srcSet={`${it.mockup2x} 2x`}
+                      alt={it.caption}
+                    />
+                    {it.id === "001" && <Video feature={it} />}
+                  </div>
+                </ScrollAnimation>
+                <ScrollAnimation
+                  tag="span"
+                  effect={idx % 2 ? "fadeInLeft" : "fadeInRight"}
+                  className="feature__numb"
+                >
+                  {++idx}
+                </ScrollAnimation>
+                <div className="feature__info">
+                  <ScrollAnimation
+                    effect={idx % 2 ? "fadeInLeft" : "fadeInRight"}
+                  >
+                    <h5 className="h-4">{it.caption}</h5>
+                  </ScrollAnimation>
+
+                  <ScrollAnimation
+                    effect={idx % 2 ? "fadeInLeft" : "fadeInRight"}
+                  >
+                    <p className="feature__descr">{it.descr}</p>
+                  </ScrollAnimation>
+                </div>
+              </div>
+            ))}
+          </Slider>
         </Box>
       </div>
     </section>

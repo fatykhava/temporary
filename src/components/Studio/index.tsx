@@ -6,6 +6,7 @@ import glyphs from "../../assets/images/glyphs.png";
 // import { ReactComponent as Stone2 } from "../../assets/images/stone2.svg";
 
 import "./style.scss";
+import styles from "./style.js";
 
 const StudioData = [
   {
@@ -36,28 +37,32 @@ export default function Studio() {
         <div className="container">
           <h2 className="h-2 white">Our Sister App Studio</h2>
           <div className="studio_container">
-            <div className="glyphs">
-              <img src={glyphs} alt="7 glyphs" />{" "}
-            </div>
-            <div className="studio_advantages">
-              {StudioData.map((value) => (
-                <div key={value.id}>
-                  <p className="studio_caption">{value.caption}</p>
-                  <p className="studio_description">{value.descr}</p>
-                </div>
-              ))}
-              <Box alignItems="center">
-                <Button
-                  style={{ background: "#ffff", marginTop: 8 }}
-                  variant="contained"
-                  color="default"
-                  disableElevation
-                  href="#"
-                >
-                  learn more
-                </Button>
-              </Box>
-            </div>
+            <ScrollAnimation tag="span" effect="fadeInLeft">
+              <div className="glyphs">
+                <img src={glyphs} alt="7 glyphs" />
+              </div>
+            </ScrollAnimation>
+            <ScrollAnimation tag="span" effect="fadeInRight">
+              <div className="studio_advantages">
+                {StudioData.map((value) => (
+                  <div key={value.id}>
+                    <p className="studio_caption">{value.caption}</p>
+                    <p className="studio_description">{value.descr}</p>
+                  </div>
+                ))}
+                <Box alignItems="center">
+                  <Button
+                    style={styles.button}
+                    variant="contained"
+                    color="default"
+                    disableElevation
+                    href="7glyphs.com"
+                  >
+                    learn more
+                  </Button>
+                </Box>
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
       </div>

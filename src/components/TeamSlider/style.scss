@@ -1,0 +1,55 @@
+@import "../../assets/styles/mixins";
+
+.team__slider {
+  width: 752px;
+
+  & .slick-arrow.slick-prev,
+  & .slick-arrow.slick-next {
+    cursor: pointer;
+    top: 50%;
+    z-index: 10;
+    width: 39px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: rgba(176, 225, 246, 0.1);
+    backdrop-filter: blur(17px);
+    border-radius: 50px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  & .slick-arrow.slick-prev {
+    left: -90px;
+    transform: translateY(-50%);
+  }
+
+  & .slick-arrow.slick-next {
+    right: -90px;
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+  @include tablet-only {
+    & .slick-arrow.slick-prev {
+      left: 0;
+    }
+  
+    & .slick-arrow.slick-next {
+      right: 0;
+    }
+  }
+
+  @include mobile-only {
+    & .slick-arrow.slick-prev {
+      left: 30%;
+    }
+  
+    & .slick-arrow.slick-next {
+      right: 30%;
+    }
+  }
+}

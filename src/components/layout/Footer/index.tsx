@@ -18,8 +18,8 @@ export default function Footer() {
           <a href="mailto:hello@gmail.com" className="nav_item_footer">
             hello@gmail.com
           </a>
-          <p>137 buckley avenue, Hobsonvile, auckland, NZ</p>
         </p>
+        <p className="email">137 buckley avenue, Hobsonvile, auckland, NZ</p>
         <nav className="nav__footer">
           <a href="https://vibemedia.app" className="nav_item_footer">
             Vibemedia.App

@@ -8,6 +8,7 @@ import TeamSlider from "../../components/TeamSlider";
 import FeaturesList from "../../components/FeaturesList";
 import ScrollAnimation from "../../components/_common/ScrollAnimation";
 import "./style.scss";
+import OfferList from '../../components/OfferList';
 
 function Home() {
   return (
@@ -33,6 +34,7 @@ function Home() {
         </div>
       </section>
       <Studio />
+      <OfferList />
       <BestApp />
     </Layout>
   );

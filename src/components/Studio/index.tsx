@@ -2,8 +2,6 @@ import React from "react";
 import { Box, Button } from "@material-ui/core";
 import ScrollAnimation from "../_common/ScrollAnimation";
 import glyphs from "../../assets/images/glyphs.png";
-// import { ReactComponent as Stone1 } from "../../assets/images/stone1.svg";
-// import { ReactComponent as Stone2 } from "../../assets/images/stone2.svg";
 
 import "./style.scss";
 import styles from "./style.js";

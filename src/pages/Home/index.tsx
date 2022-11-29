@@ -9,6 +9,7 @@ import FeaturesList from "../../components/FeaturesList";
 import ScrollAnimation from "../../components/_common/ScrollAnimation";
 import OfferList from "../../components/OfferList";
 import OurApps from '../../components/OurApps';
+import Madfit from "../../components/Madfit";
 
 import "./style.scss";
 
@@ -17,6 +18,7 @@ function Home() {
     <Layout className="page-home">
       <Hero />
       <FeaturesList />
+      <Madfit/>
       <OurApps />
       <section className="section" id="team">
         <div className="container">

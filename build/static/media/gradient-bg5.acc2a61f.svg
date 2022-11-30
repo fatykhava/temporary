@@ -1,9 +1,0 @@
-<svg viewBox="0 0 761 320" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path id="Gradient BG" fill-rule="evenodd" clip-rule="evenodd" d="M0.154297 40.1934C0.154297 17.3599 19.2365 -0.840906 42.0445 0.2381L722.044 32.4077C743.377 33.4169 760.154 51.0065 760.154 72.363V227.584C760.154 248.496 744.046 265.879 723.195 267.468L43.1945 319.302C19.9724 321.072 0.154297 302.707 0.154297 279.417V40.1934Z" fill="url(#pain5_linear)"/>
-<defs>
-<linearGradient id="pain5_linear" x1="-562.399" y1="149.773" x2="-407.196" y2="707.466" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F6F1DA"/>
-<stop offset="1" stop-color="#F4D1C4" stop-opacity="0.6"/>
-</linearGradient>
-</defs>
-</svg>

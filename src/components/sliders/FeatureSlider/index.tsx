@@ -13,7 +13,7 @@ const sliderSettings = {
   slidesToScroll: 1,
   infinite: true,
   centerMode: true,
-  initialSlide: 1,
+  initialSlide: 0,
   centerPadding: "0px",
   className: "feature__slider",
   arrow: false,

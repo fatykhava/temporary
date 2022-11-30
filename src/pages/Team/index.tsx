@@ -1,12 +1,12 @@
-import { Grid } from '@material-ui/core';
+import { Grid } from "@material-ui/core";
 
-import ScrollAnimation from '../../components/_common/ScrollAnimation';
-import Layout from '../../components/layout/Layout';
-import TeamMember from '../../components/TeamMember';
-import srcHeroBg from '../../assets/images/team/team-bg.png';
+import ScrollAnimation from "../../components/_common/ScrollAnimation";
+import Layout from "../../components/layout/Layout";
+import TeamMember from "../../components/TeamMember";
+import srcHeroBg from "../../assets/images/team/team-bg.png";
 
-import './style.scss';
-import { teamData } from '../../core/const/team';
+import "./style.scss";
+import { teamData } from "../../core/const/team";
 
 function Team() {
   return (
@@ -26,7 +26,7 @@ function Team() {
         <Grid container direction="row" spacing={2} className="teamlist">
           {teamData.map((member) => (
             <Grid key={member.id} item xs={12} sm={6} lg={4}>
-              <ScrollAnimation effect="scale">
+              <ScrollAnimation isEaseOut effect="scale">
                 <TeamMember
                   name={member.name}
                   avatar={member.avatar}

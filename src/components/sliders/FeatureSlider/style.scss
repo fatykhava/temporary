@@ -5,8 +5,8 @@
 
   & .slick-slide {
     max-width: 256px;
-    height: 520px;
-    max-height: 520px;
+    height: 538px;
+    //max-height: 520px;
   }
 
   & .slick-slide > div {
@@ -39,6 +39,7 @@
   & .slick-dots {
     position: static;
     margin-top: 24px;
+    margin-bottom: 30px;
   }
 
   & .slick-dots li.slick-active button:before {

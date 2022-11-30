@@ -13,6 +13,7 @@ import "./style.scss";
 export default function Hero() {
   return (
     <ScrollAnimation
+      isEaseOut
       tag="section"
       className="Banner Section"
       effect="fadeInTopSmall"
@@ -22,6 +23,7 @@ export default function Hero() {
           <div className="hero__inner">
             <h1 className="h-1">
               <ScrollAnimation
+                isEaseOut
                 tag="span"
                 className="Banner-TextSpan"
                 effect="fadeInLeft"
@@ -40,6 +42,7 @@ export default function Hero() {
                 <Rect1 className="hero__rect" />
               </ScrollAnimation>
               <ScrollAnimation
+                isEaseOut
                 className="Banner-ImgBlock"
                 effect="fadeInTop"
                 duration={1500}

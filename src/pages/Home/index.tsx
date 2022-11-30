@@ -8,7 +8,7 @@ import TeamSlider from "../../components/sliders/TeamSlider";
 import FeaturesList from "../../components/FeaturesList";
 import ScrollAnimation from "../../components/_common/ScrollAnimation";
 import OfferList from "../../components/OfferList";
-import OurApps from '../../components/OurApps';
+import OurApps from "../../components/OurApps";
 import Madfit from "../../components/Madfit";
 
 import "./style.scss";
@@ -18,7 +18,7 @@ function Home() {
     <Layout className="page-home">
       <Hero />
       <FeaturesList />
-      <Madfit/>
+      <Madfit />
       <OurApps />
       <section className="section" id="team">
         <div className="container">
@@ -26,7 +26,7 @@ function Home() {
           <Box className="teamlist">
             <TeamSlider />
           </Box>
-          <ScrollAnimation effect="scale" className="button">
+          <ScrollAnimation isEaseOut effect="scale" className="button">
             <Button
               variant="contained"
               color="primary"

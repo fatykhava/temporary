@@ -24,6 +24,7 @@ export default function OurApps() {
 
   return (
     <ScrollAnimation
+      isEaseOut
       tag="section"
       className="Banner Section"
       effect="fadeInTopSmall"
@@ -33,7 +34,7 @@ export default function OurApps() {
           <h2 className="h-2">OUR APPS IN ACTION</h2>
           <div className="ourApps__container">
             <div>
-              <ScrollAnimation tag="span" effect="fadeInLeft">
+              <ScrollAnimation isEaseOut tag="span" effect="fadeInLeft">
                 <div
                   className={`apps__img img-1 ${step === 1 ? "visible" : ""}`}
                 />
@@ -46,6 +47,7 @@ export default function OurApps() {
               </ScrollAnimation>
             </div>
             <ScrollAnimation
+              isEaseOut
               tag="span"
               effect="fadeInLeft"
               className="apps__logo"

@@ -26,7 +26,7 @@
   }
 
   @include xs {
-    overflow: hidden;
+    overflow-x: hidden;
   }
 }
 
@@ -262,5 +262,10 @@
 
   @include mobile-only {
     display: block;
+  }
+
+
+  .slick-list {
+    overflow-x: unset ;
   }
 }

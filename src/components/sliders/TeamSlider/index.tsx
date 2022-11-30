@@ -73,7 +73,12 @@ export default function TeamSlider() {
   return (
     <Slider {...sliderSettings} ref={sliderRef}>
       {teamData.map((member, idx) => (
-        <ScrollAnimation key={member.id} effect="scale" delay={idx * 150}>
+        <ScrollAnimation
+          isEaseOut
+          key={member.id}
+          effect="scale"
+          delay={idx * 150}
+        >
           <TeamMember
             name={member.name}
             avatar={member.avatar}

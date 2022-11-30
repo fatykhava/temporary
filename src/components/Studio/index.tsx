@@ -31,12 +31,16 @@ export default function Studio() {
         <div className="container">
           <h2 className="h-2 white">Our Sister App Studio</h2>
           <div className="studio_container">
-            <ScrollAnimation tag="span" effect="fadeInLeft">
+            <ScrollAnimation isEaseOut tag="span" effect="fadeInLeft">
               <div className="glyphs">
                 <img src={glyphs} alt="7 glyphs" />
               </div>
             </ScrollAnimation>
-            <ScrollAnimation tag="span" effect="fadeInRight">
+            <ScrollAnimation
+              isEaseOut
+              tag="span"
+              effect="fadeInRight"
+            >
               <div className="studio_advantages">
                 {StudioData.map((value) => (
                   <div key={value.id}>
@@ -50,7 +54,7 @@ export default function Studio() {
                     variant="contained"
                     color="default"
                     disableElevation
-                    href="7glyphs.com"
+                    href="https://7glyphs.com"
                   >
                     learn more
                   </Button>

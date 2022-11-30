@@ -47,15 +47,15 @@ const offerData = [
     ),
     path: Path4,
   },
-  {
-    id: "005",
-    descr: (
-      <p className="offer__text">
-        And you <b>keep your brand</b>. We want to join, not take over. Your
-        brand is still owned by you.
-      </p>
-    ),
-  },
+  // {
+  //   id: "005",
+  //   descr: (
+  //     <p className="offer__text">
+  //       And you <b>keep your brand</b>. We want to join, not take over. Your
+  //       brand is still owned by you.
+  //     </p>
+  //   ),
+  // },
 ];
 
 export default offerData;

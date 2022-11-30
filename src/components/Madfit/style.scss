@@ -8,7 +8,7 @@
 
   @include mobile-only {
     text-align: center;
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   .madfitLogo {
@@ -235,6 +235,8 @@
   display: none;
 
   @include mobile-only {
+    width: 201;
+    height: 24px;
     display: inline-flex;
     z-index: 2;
   }

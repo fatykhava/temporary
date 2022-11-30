@@ -14,6 +14,7 @@ export default function BestApp() {
           <div className="best__inner">
             <div className="textBest">
               <ScrollAnimation
+                isEaseOut
                 className="stone1"
                 tag="span"
                 effect="rotate"
@@ -22,6 +23,7 @@ export default function BestApp() {
                 <Stone1 />
               </ScrollAnimation>
               <ScrollAnimation
+                isEaseOut
                 className="stone2"
                 tag="span"
                 effect="rotate"
@@ -29,7 +31,7 @@ export default function BestApp() {
               >
                 <Stone2 />
               </ScrollAnimation>
-              <ScrollAnimation tag="div" effect="fadeInBottom">
+              <ScrollAnimation isEaseOut tag="div" effect="fadeInBottom">
                 <p className="BestApp-TextSpan BestWidth">
                   We will make the best app for your brand - and we are willing
                   to prove it.

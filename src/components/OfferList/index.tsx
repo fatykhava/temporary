@@ -11,13 +11,14 @@ import offerData from "../../core/const/offer";
 export default function OfferList() {
   return (
     <ScrollAnimation
+      isEaseOut
       tag="section"
       className="Banner Section section section--offers"
       effect="fadeInTopSmall"
     >
       <div className="container">
         <h2 className="h-2">Our offer</h2>
-        <ScrollAnimation effect="fadeInBottom">
+        <ScrollAnimation isEaseOut effect="fadeInBottom">
           <Box className="offers__description">
             <div>
               <img
@@ -39,6 +40,7 @@ export default function OfferList() {
         <Box className="offers">
           {offerData.map((it, idx) => (
             <ScrollAnimation
+              isEaseOut
               key={it.id}
               className={`offer offer__gradient-bg-${idx % 2}`}
               effect={idx % 2 ? "fadeInLeft" : "fadeInRight"}

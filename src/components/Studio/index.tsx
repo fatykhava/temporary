@@ -26,11 +26,7 @@ const StudioData = [
 
 export default function Studio() {
   return (
-    <ScrollAnimation
-      tag="section"
-      className="Banner Section"
-      effect="fadeInTopSmall"
-    >
+    <section>
       <div className="studioApp">
         <div className="container">
           <h2 className="h-2 white">Our Sister App Studio</h2>
@@ -64,6 +60,6 @@ export default function Studio() {
           </div>
         </div>
       </div>
-    </ScrollAnimation>
+    </section>
   );
 }

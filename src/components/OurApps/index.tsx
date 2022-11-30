@@ -23,44 +23,54 @@ export default function OurApps() {
   }, [step]);
 
   return (
-    <div className="ourApps">
-      <div className="container">
-        <h2 className="h-2">OUR APPS IN ACTION</h2>
-        <div className="ourApps__container">
-          <div>
-            <ScrollAnimation tag="span" effect="fadeInLeft">
-              <div
-                className={`apps__img img-1 ${step === 1 ? "visible" : ""}`}
-              />
-              <div
-                className={`apps__img img-2 ${step === 2 ? "visible" : ""}`}
-              />
-              <div
-                className={`apps__img img-3 ${step === 3 ? "visible" : ""}`}
-              />
+    <ScrollAnimation
+      tag="section"
+      className="Banner Section"
+      effect="fadeInTopSmall"
+    >
+      <div className="ourApps">
+        <div className="container">
+          <h2 className="h-2">OUR APPS IN ACTION</h2>
+          <div className="ourApps__container">
+            <div>
+              <ScrollAnimation tag="span" effect="fadeInLeft">
+                <div
+                  className={`apps__img img-1 ${step === 1 ? "visible" : ""}`}
+                />
+                <div
+                  className={`apps__img img-2 ${step === 2 ? "visible" : ""}`}
+                />
+                <div
+                  className={`apps__img img-3 ${step === 3 ? "visible" : ""}`}
+                />
+              </ScrollAnimation>
+            </div>
+            <ScrollAnimation
+              tag="span"
+              effect="fadeInLeft"
+              className="apps__logo"
+            >
+              <div>
+                <img src={madfit} srcSet={`${madfit2} 2x`} alt="Madfit logo" />
+              </div>
+              <div>
+                <img
+                  src={pridfit}
+                  srcSet={`${pridfit2} 2x`}
+                  alt="Pridfit logo"
+                />
+              </div>
+              <div>
+                <img
+                  src={strongher}
+                  srcSet={`${strongher2} 2x`}
+                  alt="Strongher logo"
+                />
+              </div>
             </ScrollAnimation>
           </div>
-          <ScrollAnimation
-            tag="span"
-            effect="fadeInLeft"
-            className="apps__logo"
-          >
-            <div>
-              <img src={madfit} srcSet={`${madfit2} 2x`} alt="Madfit logo" />
-            </div>
-            <div>
-              <img src={pridfit} srcSet={`${pridfit2} 2x`} alt="Pridfit logo" />
-            </div>
-            <div>
-              <img
-                src={strongher}
-                srcSet={`${strongher2} 2x`}
-                alt="Strongher logo"
-              />
-            </div>
-          </ScrollAnimation>
         </div>
       </div>
-    </div>
+    </ScrollAnimation>
   );
 }

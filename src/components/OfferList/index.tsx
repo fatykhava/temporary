@@ -5,15 +5,19 @@ import "./style.scss";
 
 import { Box } from "@material-ui/core";
 import ScrollAnimation from "../_common/ScrollAnimation";
-import OfferSlider from '../sliders/OfferSlider';
-import offerData from '../../core/const/offer';
+import OfferSlider from "../sliders/OfferSlider";
+import offerData from "../../core/const/offer";
 
 export default function OfferList() {
   return (
-    <section className="section section--offers">
+    <ScrollAnimation
+      tag="section"
+      className="Banner Section section section--offers"
+      effect="fadeInTopSmall"
+    >
       <div className="container">
         <h2 className="h-2">Our offer</h2>
-        <ScrollAnimation effect={'fadeInBottom'}>
+        <ScrollAnimation effect="fadeInBottom">
           <Box className="offers__description">
             <div>
               <img
@@ -50,6 +54,6 @@ export default function OfferList() {
           <OfferSlider />
         </Box>
       </div>
-    </section>
+    </ScrollAnimation>
   );
 }

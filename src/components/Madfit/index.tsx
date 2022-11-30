@@ -28,11 +28,7 @@ const StudioData = [
 
 export default function Madfit() {
   return (
-    <ScrollAnimation
-      tag="section"
-      className="Banner Section"
-      effect="fadeInTopSmall"
-    >
+    <section>
       <div className="madfit">
         <div className="container">
           <div className="Banner-TextSpan">
@@ -99,6 +95,6 @@ export default function Madfit() {
           </div>
         </div>
       </div>
-    </ScrollAnimation>
+    </section>
   );
 }

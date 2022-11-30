@@ -8,11 +8,7 @@ import "./style.scss";
 
 export default function BestApp() {
   return (
-    <ScrollAnimation
-      tag="section"
-      className="Banner Section"
-      effect="fadeInTopSmall"
-    >
+    <section>
       <div className="bestApp">
         <div className="container">
           <div className="best__inner">
@@ -33,10 +29,7 @@ export default function BestApp() {
               >
                 <Stone2 />
               </ScrollAnimation>
-              <ScrollAnimation
-                tag="div"
-                effect="fadeInBottom"
-              >
+              <ScrollAnimation tag="div" effect="fadeInBottom">
                 <p className="BestApp-TextSpan BestWidth">
                   We will make the best app for your brand - and we are willing
                   to prove it.
@@ -75,6 +68,6 @@ export default function BestApp() {
           </div>
         </div>
       </div>
-    </ScrollAnimation>
+    </section>
   );
 }

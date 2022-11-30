@@ -8,7 +8,11 @@ import "./style.scss";
 
 export default function FeaturesList() {
   return (
-    <section className="section section--features">
+    <ScrollAnimation
+      tag="secrion"
+      className="Banner Section section section--features"
+      effect="fadeInTopSmall"
+    >
       <div className="container">
         <h2 className="h-2">What we do</h2>
         <Box className="features">
@@ -56,6 +60,6 @@ export default function FeaturesList() {
           <FeatureSlider />
         </Box>
       </div>
-    </section>
+    </ScrollAnimation>
   );
 }

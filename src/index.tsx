@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { MuiThemeProvider } from "@material-ui/core/styles";
+import { ThemeProvider } from "@mui/material/styles";
 import { HelmetProvider } from "react-helmet-async";
 
 import "./assets/styles/style.scss";
@@ -16,14 +16,14 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <MuiThemeProvider theme={theme}>
+      <ThemeProvider theme={theme}>
         <HelmetProvider>
           <Routes>
             <Route path="/team" element={<Team />} />
             <Route path="/" element={<Home />} />
           </Routes>
         </HelmetProvider>
-      </MuiThemeProvider>
+      </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

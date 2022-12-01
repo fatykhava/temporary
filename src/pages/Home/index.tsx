@@ -1,4 +1,4 @@
-import { Box, Button } from "@material-ui/core";
+import { Box, Button } from "@mui/material";
 
 import Studio from "../../components/Studio";
 import BestApp from "../../components/BestApp";

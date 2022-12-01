@@ -9,7 +9,7 @@ import wave from "../../assets/images/wave.png";
 
 import "./style.scss";
 import styles from "./style.js";
-import { Box, Button } from "@material-ui/core";
+import { Box, Button } from "@mui/material";
 
 const StudioData = [
   {
@@ -92,7 +92,6 @@ export default function Madfit() {
                   <Button
                     style={styles.button}
                     variant="contained"
-                    color="default"
                     disableElevation
                     href="https://maddielymburner.co/"
                   >

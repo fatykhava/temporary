@@ -1,10 +1,11 @@
 import React from "react";
-import { Box, Button } from "@material-ui/core";
+import { Box, Button } from "@mui/material";
 import ScrollAnimation from "../_common/ScrollAnimation";
 import { ReactComponent as Stone1 } from "../../assets/images/stone1.svg";
 import { ReactComponent as Stone2 } from "../../assets/images/stone2.svg";
 
 import "./style.scss";
+
 
 export default function BestApp() {
   return (
@@ -55,9 +56,8 @@ export default function BestApp() {
                 </p>
                 <Box alignItems="center">
                   <Button
-                    style={{ background: "#ffff" }}
+                      style={{ backgroundColor: "#ffff", color: "#3B4554"}}
                     variant="contained"
-                    color="default"
                     disableElevation
                     href="mailto:hello@gmail.com"
                   >

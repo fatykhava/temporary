@@ -1,4 +1,6 @@
-import { createTheme } from '@material-ui/core/styles';
+// import { createTheme } from '@material-ui/core/styles';
+
+import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
   spacing: 4,
@@ -17,20 +19,36 @@ const theme = createTheme({
       secondary: '#879BB2',
     },
   },
-  overrides: {
+  components: {
     MuiButton: {
-      root: {
-        borderRadius: 24,
-        padding: '16px 24px',
+      styleOverrides: {
+        root: {
+          borderRadius: 24,
+          padding: '16px 24px',
+          // слити label перенес сюда, т.к. span c классом MuiButton-label находящийся в root был удален
+          /*
+          <button class="MuiButton-root">
+            -  <span class="MuiButton-label">
+                 children
+            -  </span>
+           </button>
+          * */
+          fontStyle: 'normal',
+          fontWeight: 800,
+          fontSize: '15px',
+          lineHeight: '15px',
+          letterSpacing: '0.5px',
+          textTransform: 'uppercase',
+        },
       },
-      label: {
-        fontStyle: 'normal',
-        fontWeight: 800,
-        fontSize: '15px',
-        lineHeight: '15px',
-        letterSpacing: '0.5px',
-        textTransform: 'uppercase',
-      },
+      // label: {
+      //   fontStyle: 'normal',
+      //   fontWeight: 800,
+      //   fontSize: '15px',
+      //   lineHeight: '15px',
+      //   letterSpacing: '0.5px',
+      //   textTransform: 'uppercase',
+      // },
     },
   },
   typography: {

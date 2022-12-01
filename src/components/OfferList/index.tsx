@@ -3,7 +3,7 @@ import srcOffer2x from "../../assets/images/offer@2x.png";
 
 import "./style.scss";
 
-import { Box } from "@material-ui/core";
+import { Box } from "@mui/material";
 import ScrollAnimation from "../_common/ScrollAnimation";
 import OfferSlider from "../sliders/OfferSlider";
 import offerData from "../../core/const/offer";

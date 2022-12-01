@@ -1,4 +1,4 @@
-import { Box } from "@material-ui/core";
+import { Box } from "@mui/material";
 import ScrollAnimation from "../_common/ScrollAnimation";
 import Video from "../_common/Video";
 import featuresData from "../../core/const/feature";

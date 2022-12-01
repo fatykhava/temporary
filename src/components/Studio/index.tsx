@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button } from "@material-ui/core";
+import { Box, Button } from "@mui/material";
 import ScrollAnimation from "../_common/ScrollAnimation";
 import glyphs from "../../assets/images/glyphs.png";
 
@@ -52,7 +52,6 @@ export default function Studio() {
                   <Button
                     style={styles.button}
                     variant="contained"
-                    color="default"
                     disableElevation
                     href="https://7glyphs.com"
                   >

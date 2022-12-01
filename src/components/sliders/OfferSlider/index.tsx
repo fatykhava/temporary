@@ -10,7 +10,7 @@ const sliderSettings = {
   slidesToShow: 1,
   speed: 1000,
   slidesToScroll: 1,
-  infinite: true,
+  infinite: false,
   centerMode: true,
   initialSlide: 1,
   centerPadding: "0px",

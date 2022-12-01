@@ -7,6 +7,9 @@ import featuresData from "../../../core/const/feature";
 import Video from "../../_common/Video";
 
 const sliderSettings = {
+  swipeToSlide: true,
+  swipe: true,
+  adaptiveHeight: true,
   dots: true,
   slidesToShow: 1,
   speed: 1000,

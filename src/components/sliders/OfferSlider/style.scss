@@ -7,6 +7,18 @@
     max-width: 256px;
     height: 475px;
     max-height: 475px;
+
+    .offer__text {
+      transition: opacity 0.2s ease-in;
+      opacity: 0;
+    }
+
+    &.slick-active {
+      .offer__text {
+        transition: opacity 0.2s ease-in;
+        opacity: 1;
+      }
+    }
   }
 
   & .slick-dots {

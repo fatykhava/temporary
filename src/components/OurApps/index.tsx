@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import ScrollAnimation from "../_common/ScrollAnimation";
 import madfit from "../../assets/images/madfit.png";
 import madfit2 from "../../assets/images/madfit@2x.png";
-import pridfit from "../../assets/images/pridfit.png";
-import pridfit2 from "../../assets/images/pridfit@2x.png";
+import pridfit from "../../assets/images/pridfit22.png";
 import strongher from "../../assets/images/strongher.png";
 import strongher2 from "../../assets/images/strongher@2x.png";
 
@@ -58,8 +57,9 @@ export default function OurApps() {
               <div>
                 <img
                   src={pridfit}
-                  srcSet={`${pridfit2} 2x`}
+                  srcSet={`${pridfit} 2x`}
                   alt="Pridfit logo"
+                  className="pridfit2"
                 />
               </div>
               <div>

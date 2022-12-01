@@ -59,7 +59,7 @@ export default function BestApp() {
                     variant="contained"
                     color="default"
                     disableElevation
-                    href="tel: 0-800-111-222"
+                    href="mailto:hello@gmail.com"
                   >
                     contact us
                   </Button>

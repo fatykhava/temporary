@@ -27,7 +27,6 @@
   min-height: 720px;
   max-height: 100vh;
   padding-top: 90px;
-  padding-left: 15px;
 
   @include mobile-only {
     flex-direction: column;

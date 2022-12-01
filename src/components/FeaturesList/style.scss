@@ -20,7 +20,7 @@
 
       @include mobile-only {
         margin-top: 32px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
       }
     }
   }
@@ -262,10 +262,5 @@
 
   @include mobile-only {
     display: block;
-  }
-
-
-  .slick-list {
-    overflow-x: unset ;
   }
 }

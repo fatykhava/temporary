@@ -72,10 +72,10 @@
   .video-react-video {
     width: 190px;
     height: 190px;
-    @include sm {
-      width: 101px;
-      height: 101px;
-    }
+    // @include sm {
+    //   width: 101px;
+    //   height: 101px;
+    // }
     @include xs {
       width: 131px;
       height: 131px;

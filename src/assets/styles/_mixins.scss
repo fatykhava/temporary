@@ -33,6 +33,12 @@
   }
 }
 
+@mixin ml {
+  @media (max-width: 1450px) {
+    @content;
+  }
+}
+
 @mixin tablet-only {
   @media (max-width: 1024px) {
     @content;

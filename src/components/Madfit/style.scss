@@ -9,6 +9,8 @@
   @include mobile-only {
     text-align: center;
     overflow: hidden;
+    min-height: 100vh;
+    min-height: 100dvh;
   }
 
   .madfitLogo {
@@ -58,7 +60,6 @@
 .madfit_container {
   position: relative;
   display: flex;
-  justify-content: space-between;
   max-height: 100vh;
 
   @include mobile-only {
@@ -163,7 +164,7 @@
 }
 
 .appStore {
-  margin-bottom: 42px;
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;

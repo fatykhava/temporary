@@ -17,6 +17,14 @@
     padding: 42px 0;
   }
 
+  @include mobile-only {
+    min-height: 100vh;
+    min-height: 100dvh;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+  }
+
   & .h-2 {
     margin-bottom: 62px;
     text-align: center;

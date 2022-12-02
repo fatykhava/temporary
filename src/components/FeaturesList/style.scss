@@ -14,7 +14,6 @@
     }
     @include mobile-only {
       min-height: 100vh;
-      min-height: 100dvh;
       justify-content: center;
     }
     & .h-2 {

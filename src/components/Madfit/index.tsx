@@ -2,7 +2,7 @@ import React from "react";
 import ScrollAnimation from "../_common/ScrollAnimation";
 import { ReactComponent as MadfitLogo } from "../../assets/images/madfit.svg";
 import { ReactComponent as Rect3 } from "../../assets/images/rect3.svg";
-import girlPwr from "../../assets/images/girlPower.png";
+import girlPwr from "../../assets/images/girlPower.webp";
 import girlPhone from "../../assets/images/girlPhone.png";
 import madfit from "../../assets/images/madfit33.png";
 import wave from "../../assets/images/wave.png";

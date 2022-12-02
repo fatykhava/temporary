@@ -67,33 +67,33 @@
   }
 
   &.img-1 {
-    background: url("../../assets/images/apps1@2x.png") no-repeat center;
+    background: url("../../assets/images/apps1@2x.webp") no-repeat center;
     background-size: cover;
 
     @include mobile-only {
-      background: url("../../assets/images/apps-mobile1@2x.png") no-repeat
+      background: url("../../assets/images/apps-mobile1@2x.webp") no-repeat
         center;
       background-size: cover;
     }
   }
 
   &.img-2 {
-    background: url("../../assets/images/apps2@2x.png") no-repeat center;
+    background: url("../../assets/images/apps2@2x.webp") no-repeat center;
     background-size: cover;
 
     @include mobile-only {
-      background: url("../../assets/images/apps-mobile2@2x.png") no-repeat
+      background: url("../../assets/images/apps-mobile2@2x.webp") no-repeat
         center;
       background-size: cover;
     }
   }
 
   &.img-3 {
-    background: url("../../assets/images/apps3@2x.png") no-repeat center;
+    background: url("../../assets/images/apps3@2x.webp") no-repeat center;
     background-size: cover;
 
     @include mobile-only {
-      background: url("../../assets/images/apps-mobile3@2x.png");
+      background: url("../../assets/images/apps-mobile3@2x.webp");
       background-size: cover;
     }
   }

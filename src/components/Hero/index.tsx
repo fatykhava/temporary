@@ -1,12 +1,12 @@
 import React from "react";
 import ScrollAnimation from "../_common/ScrollAnimation";
 import { ReactComponent as Rect1 } from "../../assets/images/rect1.svg";
-import srcGirl from "../../assets/images/girl.png";
-import srcGirl2x from "../../assets/images/girl@2x.png";
-import srcIphone from "../../assets/images/phone.png";
-import srcIphone2x from "../../assets/images/phone@2x.png";
-import srcButtons from "../../assets/images/buttons.png";
-import srcButtons2x from "../../assets/images/buttons@2x.png";
+import srcGirl from "../../assets/images/girl.webp";
+import srcGirl2x from "../../assets/images/girl@2x.webp";
+import srcIphone from "../../assets/images/phone.webp";
+import srcIphone2x from "../../assets/images/phone@2x.webp";
+import srcButtons from "../../assets/images/buttons.webp";
+import srcButtons2x from "../../assets/images/buttons@2x.webp";
 
 import "./style.scss";
 

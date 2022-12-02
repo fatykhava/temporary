@@ -17,6 +17,7 @@ const sliderSettings = {
   className: "offer__slider",
   arrow: false,
   variableWidth: true,
+  touchThreshold: 20,
 };
 
 export default function OfferSlider() {

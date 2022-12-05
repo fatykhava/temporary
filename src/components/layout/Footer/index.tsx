@@ -10,7 +10,7 @@ export default function Footer() {
         <LogoVM className="header__logo" />
         <p className="name__logo">VibeMedia</p>
         <p className="email">
-          <a href="mailto:hello@gmail.com" className="nav_item_footer">
+          <a href="mailto:team@vibemedia.app" className="nav_item_footer">
             team@vibemedia.app
           </a>
         </p>

@@ -9,17 +9,12 @@ export default function Footer() {
       <section className="footer__section">
         <LogoVM className="header__logo" />
         <p className="name__logo">VibeMedia</p>
-        <p className="number">
-          <a href="tel: 0-800-111-222" className="nav_item_footer">
-            0 800 111 222
-          </a>
-        </p>
         <p className="email">
           <a href="mailto:hello@gmail.com" className="nav_item_footer">
-            hello@gmail.com
+            team@vibemedia.app
           </a>
         </p>
-        <p className="email">137 buckley avenue, Hobsonvile, auckland, NZ</p>
+        <p className="email address">{`Smales Farm\n72 Taharoto Road\nTakapuna\nAuckland 0622\nNew Zealand`}</p>
         <nav className="nav__footer">
           <a href="https://vibemedia.app" className="nav_item_footer">
             Vibemedia.App

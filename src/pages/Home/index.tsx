@@ -15,7 +15,7 @@ import "./style.scss";
 
 function Home() {
   return (
-    <Layout className="page-home">
+    <Layout>
       <Hero />
       <FeaturesList />
       <Madfit />

@@ -31,18 +31,25 @@
   }
 
   .email {
-    width: 161px;
     margin: 12px auto;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
+
+    &.address {
+      white-space: pre-line;
+    }
   }
 
   .nav__footer {
-    max-width: 213px;
+    max-width: 260px;
     display: flex;
     margin: 40px auto 34px;
     justify-content: space-between;
+
+    & a {
+      text-transform: uppercase;
+    }
   }
 
   .nav_item_footer {

@@ -59,7 +59,7 @@ export default function BestApp() {
                       style={{ backgroundColor: "#ffff", color: "#3B4554"}}
                     variant="contained"
                     disableElevation
-                    href="mailto:hello@gmail.com"
+                    href="mailto:team@vibemedia.app"
                   >
                     contact us
                   </Button>

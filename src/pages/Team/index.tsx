@@ -10,7 +10,7 @@ import { teamData } from "../../core/const/team";
 
 function Team() {
   return (
-    <Layout headerTheme="dark" className="page-team" back="/">
+    <Layout headerTheme="dark" className="page-team" back="/" title="Team">
       <ScrollAnimation isEaseOut effect="fadeIn" duration={4000}>
         <img src={srcHeroBg} alt="Team" className="team__hero-bg" />
       </ScrollAnimation>
